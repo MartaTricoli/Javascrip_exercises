@@ -4,7 +4,7 @@ function nicknameMap(persons) {
     if (!Array.isArray(persons)) {
         throw new Error("persons must be a valid array!");
     }
-    return persons.map(person => `<${person.name}>-<${person.age}>`);
+    return persons.map(person => `${person.name}-${person.age}`);
 }
 
 const persons = [
