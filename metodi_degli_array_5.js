@@ -5,7 +5,6 @@ function calculateAverageAge(persons) {
         throw new Error("persons must be a valid array.")
     }
     return persons.reduce((a,person) => a + person.age, 0)/persons.length;
-    
 }
 
 const persons = [
