@@ -24,3 +24,5 @@ const persons = [
 const average = calculateAverageAge(persons);
 console.log(persons);
 console.log(average);
+
+//return Math.round(persons.reduce((a,person) => a + person.age, 0)/persons.length); se si volesse ottenere la media approssimata all'intero.
