@@ -14,7 +14,6 @@ const rl = readline.createInterface({
     output: process.stdout,
 });
 
-
 rl.question("Please, type your name here: ", answer => {
     userName = answer;
     console.log(`Hello ${userName}! ${message}`);

@@ -1,7 +1,7 @@
 //Implementare la funzione firstUncompletedNote che, dato un array di note, restituisce la prima nota non completata. Una nota viene considerata completata se tutti i todo presenti hanno il flag done impostato a true.
 
 function firstUncompletedNote(notes) {
-    if (!Array.isArray) {
+    if (!Array.isArray(notes)) {
         throw new Error("notes must be a valid array.")
     }
     return notes.find(note => note.todos.find(todo => !todo.done));
@@ -81,3 +81,5 @@ const notes = [
 const noteInProgress = firstUncompletedNote(notes);
 console.log('All notes: ', notes); 
 console.log('First note in progress: ', noteInProgress);
+
+//esercizio svolto con Emilio Lenglet
