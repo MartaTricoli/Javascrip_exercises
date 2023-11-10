@@ -3,6 +3,6 @@
 const originalArray = [1, 2, 3, 4, 5];
 
 const cloneArray = [...originalArray];
-originalArray.push(6,7,8);
+originalArray.push(10);
 console.log(originalArray);
 console.log(cloneArray);
