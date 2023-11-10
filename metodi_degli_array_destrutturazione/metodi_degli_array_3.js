@@ -14,6 +14,7 @@ function newFruits (array) {
 }
 console.log(newFruits(fruits).join(" "));
 
-//non ho trovato un modo più conciso per farlo con forEach. 
-//ho utilizzato join() perchè dalla consegna mi è sembrato che volessero il risultato in questo modo.
+
+//si sarebbe potuto ottenere un risultato simile con fruits.forEach(fruit => console.log(fruit + "!")), ma dal suggerimento mi sembrava che li volessero tutti sulla stessa riga, stampati uno dopo l'altro.
+
 //si sarebbe potuto fare molto più rapidamente con map: console.log(fruits.map(fruit => fruit + "!").join(" ")));
