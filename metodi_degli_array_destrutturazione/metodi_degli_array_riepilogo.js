@@ -9,9 +9,10 @@ const studenti = [
 ];
 
 //1. Utilizza forEach per stampare i nomi degli studenti.
-let listaNomi = "";
-studenti.forEach(studente => listaNomi += ` ${studente.nome}`);
-console.log(`I nomi degli studenti sono: ${listaNomi}`);
+// let listaNomi = "";
+// studenti.forEach(studente => listaNomi += ` ${studente.nome}`);
+// console.log(`I nomi degli studenti sono: ${listaNomi}`);
+studenti.forEach(studente => console.log(studente.nome)); //così potevo scriverlo in modo più compatto anche se non so se sia più corretto.
 
 //2. Utilizza find per trovare uno studente con un voto superiore a 90.
 console.log(studenti.find(studente => studente.voto > 90));
