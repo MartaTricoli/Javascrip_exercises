@@ -9,10 +9,10 @@ function lanciaDadi (min, max) {
         throw new Error("min and max must be valid numbers");
     }
     setTimeout(() => {
-        console.log("Lancio dei dai in corso...");
+        console.log("Lancio dei dadi in corso...");
     }, 1000);
     setTimeout(() => {
-        console.log(`Lancio dei dadi: Dado 1 = ${Math.floor(Math.random() * (max - min +1) + 1)}, Dado 2 = ${Math.floor(Math.random() * (max - min + 1) + min)}`) ;
+        console.log(`Lancio dei dadi: Dado 1 = ${Math.floor(Math.random() * (max - min + 1) + min)}, Dado 2 = ${Math.floor(Math.random() * (max - min + 1) + min)}`) ;
     }, 2000);
 }
 
