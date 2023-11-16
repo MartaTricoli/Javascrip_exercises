@@ -3,6 +3,9 @@ Implementare una callback per gestire i dati recuperati.
 Utilizzare setTimeout per simulare il ritardo dell'operazione.*/
 
 function fetchDataFromAPI(callback) {
+    if (typeof callback !== "function") {
+        throw new Error("callback must be a function");
+    }
     setTimeout( () => {
         let user = { name: "John", age: 30};
         callback(user);

@@ -10,15 +10,15 @@ function runCallbacks(callbacks) {
 }
 
 function firstCallback() {
-   //...
+   console.log("first callback");
 }
 
 function secondCallback() {
-    //..
+    console.log("second callback");
 }
   
 function thirdCallback() {
-    //..
+    console.log("third callback");
 }
 const callbackArray = [firstCallback, secondCallback, thirdCallback];
 runCallbacks(callbackArray);
