@@ -24,3 +24,5 @@ function handleData(data) {
 }
   
 fetchDataFromAPI(user, handleData);
+
+//esercizio svolto in pair con Ilyasse Laraaj

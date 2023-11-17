@@ -22,3 +22,5 @@ function displayResult(error, result) {
 }
   
 performOperation(5, 3, displayResult);
+
+//esercizio svolto in pair con Ilyasse Laraaj
