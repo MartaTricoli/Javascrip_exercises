@@ -13,7 +13,7 @@ function filterArray(arr, callback) {
     return arr.filter(element => callback(element));
 }
 
-function isEven(num) {
+ export function isEven(num) {
     return num % 2 === 0;
 }
 

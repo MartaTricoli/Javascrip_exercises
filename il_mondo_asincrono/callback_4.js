@@ -22,3 +22,4 @@ function thirdCallback() {
 }
 const callbackArray = [firstCallback, secondCallback, thirdCallback];
 runCallbacks(callbackArray);
+
