@@ -29,7 +29,7 @@ function userPost (array) {
         } else {
             reject ("array must be a valid array");
         }
-    })
+    });
 }
 
 userData(user).then(() => {
