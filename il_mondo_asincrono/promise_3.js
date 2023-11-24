@@ -12,7 +12,7 @@ function helloName(name) {
                 reject("name must be a string. Empty strings are not accepted ");
             }
         }, 2000);
-    })
+    });
 }
 
 helloName(nome).then((data) => {
