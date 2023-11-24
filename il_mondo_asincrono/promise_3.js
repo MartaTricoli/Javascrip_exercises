@@ -3,9 +3,6 @@ Utilizzare setTimeout per simulare un'operazione asincrona.*/
 
 const nome = "Marta";
 
-const name = ["Marta"]; //for testing errors.
-const nnome = {nome : "Marta"};//for testing errors.
-
 function helloName(name) {
     return new Promise ((resolve, reject) => {
         setTimeout(() => {
@@ -23,5 +20,3 @@ helloName(nome).then((data) => {
 }).catch((error) => {
     console.log(error);
 });
-
-//credo sia corretto.
