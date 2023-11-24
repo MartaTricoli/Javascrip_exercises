@@ -27,3 +27,4 @@ async function lanciaVeicoloSpaziale() {
 }
 
 lanciaVeicoloSpaziale();
+//esercizio svolto con Ilyasse Laraaj
