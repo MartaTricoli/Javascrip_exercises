@@ -4,9 +4,6 @@
 3. La seconda Promise recupera i post dell'utente ['Post 1', 'Post 2', 'Post 3'].
 4. Infine, chiama le funzioni per recuperare e stampare in console il nome dell'utente e i titoli dei post.*/
 
-//const user = [1, 2, 3]; for checking possible errors.
-//const posts = "Post 1, Post 2, Post 3"; for checking possible errors.
-
 const user = { id: 1, name: 'John' };
 const posts = ['Post 1', 'Post 2', 'Post 3'];
 
@@ -44,4 +41,4 @@ userPost(posts).then(() => {
     console.log(error);
 });
 
-//richiede un setTimeout???? Boh per adesso lascio così.
+
