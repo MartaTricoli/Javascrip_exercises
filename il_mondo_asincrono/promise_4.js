@@ -12,7 +12,7 @@ function fetchDataFromAPI(number) {
             if (!isNaN(+number) && number < 0.5) {
                 resolve ("Data retrieved successfully");
             } else {
-                reject ("Error: Failed to fetch data")
+                reject ("Error: Failed to fetch data");
             }
         }, 1500);
     });
@@ -23,5 +23,3 @@ fetchDataFromAPI(success).then((data) => {
 }).catch((error) => {
     console.log(error);
 });
-
-//questo è stato carino!
