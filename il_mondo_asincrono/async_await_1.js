@@ -17,3 +17,5 @@ async function ottieniDati() {
 }
 
 ottieniDati();
+
+//esercizio svolto con Ilyasse Laraaj
