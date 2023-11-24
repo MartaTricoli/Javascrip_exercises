@@ -23,6 +23,5 @@ fetchDataFromAPI(user).then(() => {
     console.log(error);
 });
 
-//non sono sicura, ma così funziona e mi stampa l'errore se non gli passo un oggetto. Diciamo che va bene così.
 
 
