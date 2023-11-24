@@ -23,7 +23,7 @@ function fetchPersonById(id){
         setTimeout(() => {
             const person = persons.find(person => person.id == id);
             if (person) {
-                return resolve(person)
+                return resolve(person);
             } else {
                 return reject(`No person with id ${id}`);
             }
