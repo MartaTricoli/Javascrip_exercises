@@ -17,9 +17,12 @@ function caricaModulo(modulo) {
   
   // ipmlementa la funzione asincrona "lanciaVeicoloSpaziale"
 async function lanciaVeicoloSpaziale() {
-    await caricaModulo("A");
-    await caricaModulo("B");
-    await caricaModulo("C");
+    const a = await caricaModulo("A");
+    console.log(a);
+    const b = await caricaModulo("B");
+    console.log(b);
+    const c = await caricaModulo("C");
+    console.log(c);
     console.log("Veicolo spaziale pronto per il lancio!");
 }
 
