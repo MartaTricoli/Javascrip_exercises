@@ -33,9 +33,7 @@ userData(user).then(() => {
     console.log(`user name: ${user.name}`);
 }).catch((error) => {
     console.log(error);
-});
-
-userPost(posts).then(() => {
+}).then(userPost(posts)).then(() => {
     posts.forEach(post => console.log(post));
 }).catch((error) => {
     console.log(error);
