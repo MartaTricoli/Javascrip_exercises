@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cercare elementi nel DOM</title>
+</head>
+<body>
+    <div id="container">
+        <form>
+            <div>
+                <label>First Name:</label>
+                <input
+                type="text"
+                class="form-input"
+                id="firstName"
+                value="Mario"
+                placeholder="firstName"
+                />
+            </div>
+            <div>
+                <label>Last Name:</label>
+                <input
+                type="text"
+                class="form-input"
+                id="lastName"
+                value="Rossi"
+                placeholder="lastName"
+                />
+            </div>
+            <div>
+                <label>Age:</label>
+                <input
+                type="number"
+                class="form-input"
+                id="age"
+                value="25"
+                placeholder="age"
+                />
+            </div>
+        </form>
+    </div>
+
+<!--Implementare il codice necessario per:
+1. Recuperare il valore di ciascun campo di input e creare un oggetto person contenente le proprietà: firstName, lastName e age.
+2. Infine recuperare l'elemento forme aggiungere l'attributo data-person contenente l'oggetto person in formato json.-->
+    <script>
+        const $firstNameInput = document.querySelector("#firstName");
+        const $lastNameInput = document.querySelector("#lastName");
+        const $ageInput = document.querySelector("#age");
+        const $form = document.querySelector("form");
+
+        const person = {
+            firstName: $firstNameInput.value,
+            lastName: $lastNameInput.value,
+            age: $ageInput.value
+        };
+        console.log(person);
+        $form.setAttribute("data-person", `${JSON.stringify(person)}`);
+    </script>
+</body>
+</html>
