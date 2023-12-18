@@ -13,16 +13,31 @@
 
   </head>
   <body>
-    <h1>Dark Mode</h1>
+    <h1 id="title">Dark Mode</h1>
     <div>
       <button class="btn">Dark Mode</button>
     </div>
     <script>
         const $dmBtn = document.querySelector(".btn");
         const $body = document.querySelector("body");
+        const $btnTitle = document.querySelector("#title");
+
+        const lightMode = "Light Mode";
+        const darkMode = "Dark Mode";
        
         $dmBtn.addEventListener("click", () => {
+          if (!$dmBtn.classList.contains("dark_mode_on")) {
             $body.classList.add("theme");
+            $dmBtn.classList.add("dark_mode_on");
+            $dmBtn.innerText = lightMode;
+            $btnTitle.innerText = lightMode;
+          } else {
+            $body.classList.remove("theme");
+            $dmBtn.classList.remove("dark_mode_on");
+            $dmBtn.innerText = "Dark Mode";
+            $dmBtn.innerText = darkMode;
+            $btnTitle.innerText = darkMode;
+          }
         });
     </script>
   </body>
